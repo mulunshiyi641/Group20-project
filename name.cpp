@@ -20,13 +20,13 @@ int main()
 
 	std::ifstream infile("names.txt");
 	std::string line;
-	string word;
+	string name;
 
 	{
-		for(int i = 0; i < word.length; i++)
+		for(int i = 0; i < name.length; i++)
 
-		int _char = word[i];
-		tempScore += int_char;
+		int _char = name[i];
+		tempScore += int_char(26);
 
 			cout<<"For "<<name<<" the score is: "<<nameScore<<endl;
 			totalNameScore += nameScore;
