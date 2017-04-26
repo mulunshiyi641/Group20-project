@@ -1,14 +1,6 @@
-/*
- * name.cpp
- *
- *  Created on: Apr 25, 2017
- *      Author: shiyi
- */
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-
+#include<fstream>
+#include<string>
 using namespace std;
 
 int main()
@@ -17,22 +9,26 @@ int main()
 	int totalNameScore = 0;
 	int counter = 0;
 	int tempScore = 0;
+	
+	ifstream fin;
+	string temp = "";
+	string text = "";
+	int *array = 0;
+	string array = new string[];
 
-	std::ifstream infile("names.txt");
-	std::string line;
-	string name;
+　
+	fin.open("C:\\Users\\mulunshiyi641\\Desktop\\names.txt");
+	while (!fin.eof()) {
+		getline(fin, temp);
+		text += temp + "\n";
+	}
 
-	{
-		for(int i = 0; i < name.length; i++)
+	cout << text << endl;
 
-		int _char = name[i];
-		tempScore += int_char(26);
+	fin.close();
 
-			cout<<"For "<<name<<" the score is: "<<nameScore<<endl;
-			totalNameScore += nameScore;
-			counter++;
-}
-	cout<<"Total score for all names is : "<<totalNameScore<<endl;
-
+　
+　
+	system("pause");
 	return 0;
 }
