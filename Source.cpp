@@ -32,8 +32,8 @@ int main()
 
 	sort(myArray, myArray + z); 
 
-	for (int y = 0; y < z; y++) {
-		cout << myArray[y] << endl;
+	//for (int y = 0; y < z; y++) {
+	//  cout << myArray[y] << endl;
 	}
 
 
