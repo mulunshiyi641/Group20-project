@@ -11,7 +11,6 @@ int const ARRAYSIZE = 5163;
 
 int main()
 {
-	int a;
 	
 	ifstream file("names.txt");
 	
@@ -39,6 +38,6 @@ int main()
 
 	return 0;
 
-	cin >> a;
+	system ("PAUSE");
 
 }
