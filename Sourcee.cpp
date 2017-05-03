@@ -7,6 +7,7 @@
 
 using namespace std;
 
+
 int main()
 {
 
@@ -33,7 +34,7 @@ int main()
 	int counter = 0;
     int total = 0;
 
-	//totals each word then multiplys it by position
+	//totals each word then multiplys it by position (*it)
 	for (auto it = names.begin(); it != names.end(); it++)
 	{
 		counter++;
@@ -42,7 +43,7 @@ int main()
 		int nameval = 0;
 		for (string::iterator it = name.begin(); it != name.end(); it++)
 		{
-			//ascii value to integer
+			//use ascii value for letter score
 			nameval += *it - 64;
 		}
 
