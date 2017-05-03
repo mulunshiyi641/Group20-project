@@ -29,30 +29,24 @@ int main()
 	// sort the names int alphabetical order
 	sort(names.begin(), names.end());
 
-	//for (int i = 0; i < names.size(); i++) {
-	//	cout << names[i] << endl;
-	//}
 	
-	
-
 	int counter = 0;
-	unsigned int total = 0;
+    int total = 0;
 
 	//totals each word then multiplys it by position
 	for (auto it = names.begin(); it != names.end(); it++)
 	{
 		counter++;
-		//copy word from token excluding " "
 		string name((*it).begin(), (*it).end());
 
-		int sub_total = 0;
+		int nameval = 0;
 		for (string::iterator it = name.begin(); it != name.end(); it++)
 		{
 			//ascii value to integer
-			sub_total += *it - 64;
+			nameval += *it - 64;
 		}
 
-		total += sub_total*counter;
+		total += (nameval * counter);
 	}
 
 	cout << total;
@@ -61,6 +55,3 @@ int main()
 	return 0;
 
 	}
-
-
-
