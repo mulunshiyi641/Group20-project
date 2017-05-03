@@ -34,7 +34,7 @@ int main()
 	int counter = 0;
     int total = 0;
 
-	//totals each word then multiplys it by position (*it)
+	//totals each word then multiplys it by position 
 	for (auto it = names.begin(); it != names.end(); it++)
 	{
 		counter++;
