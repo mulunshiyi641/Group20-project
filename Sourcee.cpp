@@ -34,7 +34,7 @@ int main()
 	int counter = 0;
     int total = 0;
 
-	//totals each word then multiplys it by position 
+	//totals each word then multiplys it by position
 	for (auto it = names.begin(); it != names.end(); it++)
 	{
 		counter++;
@@ -50,7 +50,7 @@ int main()
 		total += (nameval * counter);
 	}
 
-	cout << total;
+	cout << "Total score is: " << total << endl;
 
 	system("pause");
 	return 0;
